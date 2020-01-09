@@ -1668,24 +1668,21 @@
 }
 
 .play-pause .shape i {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  margin-top: 7px;
-  margin-left: 7px;
-  margin-right: 7px;
-  margin-bottom: 7px;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
   font-size: 13.5px;
   color: #666;
 }
 
-.play-pause .shape i.fa-play {
-  margin-left: 8px;
-}
-
 .play-pause .shape i.fa-spinner {
-  transform: none;
+  left: 25%;
+  top: 25%;
+  transform: translate(-50%, -50%);
 }
 
 .interface {
