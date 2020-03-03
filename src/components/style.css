@@ -1310,23 +1310,14 @@
   }
   .btn {
           padding: 10px 20px;
-          background: #F4F4F2;
   }
   .btn_red {
           background: #C12B05;
           color: #FFF;
   }
-  .btn:hover {
-          background: #E4E4E2;
-  }
   .btn_red:hover {
           background: #800000;
           color: #FFF;
-  }
-  a.btn {
-          color: #666;
-          text-align: center;
-          text-decoration: none;
   }
   a.btn_red {
           color: #FFF;
@@ -1797,4 +1788,31 @@ a {
 
 a:hover {
   color: #900000;
+}
+
+.clubimage {
+  width: inherit;
+}
+
+.services-pic {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.btn-discord { 
+  color:#fff;
+  background-color: #7289DA;
+  border-color:rgb(92, 112, 184);
+}
+.btn-discord:hover,.btn-discord:focus,.btn-discord.focus,.btn-discord:active,.btn-discord.active,.open>.dropdown-toggle.btn-discord{
+  color:#fff;
+  background-color:rgb(90, 110, 180);
+  border-color:rgb(82, 102, 172);
+}
+
+.services-info {
+  font-family: "Oswald", helvetica, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
 }
