@@ -26,12 +26,17 @@ let Footer = () => {
                     target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook"></i></a>
                     <a href="https://twitter.com/wmhdonlineradio"
                     target="_blank" rel="noopener noreferrer"><i className="fa fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/channel/UCc80ucuahHW0nnYFEUgB3gA"
+                    <a href="https://www.youtube.com/channel/UCt_7AV3lxKFOOhB4TIChnIg/featured"
                     target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube"></i></a>
                     <a href="https://instagram.com/wmhdonlineradio/"
                     target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram"></i></a>
                     </div>{ /* /.socmed-wrap */ }
                 </div>{ /* /.content */ }
+                </div>{ /* /.footer-row */ }
+
+                <div className="col-md-4 col-sm-4 footer-row">
+                    <div className="title"><h4>View the chat</h4></div>
+                    <a href="https://discord.gg/g8kFRej" type="button" className="btn btn-discord">Join Our Discord</a>
                 </div>{ /* /.footer-row */ }
             </div>{ /* /.container */ }
         
