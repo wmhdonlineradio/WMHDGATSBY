@@ -9,6 +9,7 @@ const ServicesPage = ({data}) => (
     <SEO title="Services" />
     <section className="container content" style={{marginBottom: 20}}>
         <h1>Campus Services</h1>
+        <p className="services-info">For any questions regarding our services or to book one of our studios, contact our officers by <a href="mailto:wmhdradio@gmail.com">email</a>.</p>
         <div className="row">
           <div className="col-md-4">
             <h3>DJ Services</h3>
@@ -48,7 +49,6 @@ const ServicesPage = ({data}) => (
             <p>Our Podcast Studio is free to book for recording any voice-based audio. There are high quality vocal microphones for 3 different speakers and more can be added if needed.</p>
           </div>
         </div>
-        <p className="services-info">For any questions regarding our services or to book one of our studios, contact our <a href="mailto:wmhdradio@gmail.com">officers</a>.</p>
     </section>
   </>
 )
