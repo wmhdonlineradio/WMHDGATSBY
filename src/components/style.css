@@ -1720,6 +1720,21 @@
   }
 }
 
+.song-history .dropdown-menu .divider {
+  height: 1px;
+  margin: 5px 0;
+  background-color: #3a3a3a;
+}
+
+.song-history .dropdown-menu .dropdown-header {
+  padding: 0px 0px 3px 0px;
+  font-size: 15px;
+}
+
+.song-history i {
+  cursor: pointer;
+}
+
 .song-history p {
   padding: 0;
   margin: 0;
