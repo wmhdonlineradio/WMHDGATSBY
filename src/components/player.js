@@ -82,8 +82,8 @@ class Player extends React.Component {
               this.setState({trackArtwork: 'https://images.radio.co/station_logos/sced914ff9.20200325015033.png'})
             }
           });
-        var timeout = 3000;
-        setTimeout(this.fetchData(), timeout)
+        var timeout = 20000;
+        setTimeout(this.fetchData(), timeout);
       });
   }
 
