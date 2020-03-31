@@ -6,7 +6,7 @@ import 'rc-slider/assets/index.css';
 class Player extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { playing: false, loading: false, trackTitle: 'Unknown Song', artistName: 'Unknown Artist', showName: 'Unknown Show', volume: 25 };
+    this.state = { playing: false, loading: false, trackTitle: 'Unknown Song', volume: 25, showHistory: false, historyClass: "dropup" };
   }
 
   onPlayStopClicked() {
@@ -26,7 +26,7 @@ class Player extends React.Component {
   initMp3Player() {
     this.setState({ loading: true });
     var audio = new Audio();
-    audio.src = 'http://icecast.wmhdradio.org:8000/wmhd'; //link to the audio file
+    audio.src = 'https://streams.radio.co/sced914ff9/listen'; //link to the audio file
     audio.autoplay = true;
     audio.volume = this.state.audio.volume;
 
@@ -73,11 +73,16 @@ class Player extends React.Component {
   }
 
   fetchData() {
-    fetch('https://dj.wmhdradio.org/api/live-info/')
+    fetch('https://public.radio.co/stations/sced914ff9/status')
       .then(response => response.json())
       .then(data => { 
-        this.setState({ trackTitle: data.current.track_title, artistName: data.current.artist_name, showName: data.currentShow[0].name });
-        var timeout = (Date.parse(data.next.starts) - Date.parse(data.schedulerTime)) + 10000
+        this.setState({ trackTitle: data.current_track.title, history: data.history, trackArtwork: data.current_track.artwork_url }, 
+          () => {
+            if (!this.state.trackArtwork) {
+              this.setState({trackArtwork: 'https://images.radio.co/station_logos/sced914ff9.20200325015033.png'})
+            }
+          });
+        var timeout = 3000;
         setTimeout(this.fetchData(), timeout)
       });
   }
@@ -107,14 +112,22 @@ class Player extends React.Component {
       document.cookie = name+'=; Max-Age=-99999999;';  
   }
 
+  toggleHistory() {
+    if (!this.state.showHistory) {
+      this.setState({ showHistory: !this.state.showHistory, historyClass: "dropup open" });
+    } else {
+      this.setState({ showHistory: !this.state.showHistory, historyClass: "dropup" });
+    }
+  }
+
   render() {
     let icon;
     if (this.state.loading) {
-      icon = (<i className="fa fa-spinner fa-pulse"></i>)
+      icon = (<i className="fa fa-spinner fa-pulse fa-3x fa-fw"></i>)
     } else if (this.state.playing && !this.state.audio.muted) {
-      icon = (<i className="fa fa-pause"></i>);
+      icon = (<i className="fa fa-pause fa-3x fa-fw"></i>);
     } else {
-      icon = (<i className="fa fa-play"></i>);
+      icon = (<i className="fa fa-play fa-3x fa-fw"></i>);
     }
     return (
       <>
@@ -122,35 +135,75 @@ class Player extends React.Component {
         <div className={this.state.activeClass} role="application" aria-label="media player" ref="audio">
           <div className="interface">
             <div className="container">
-              <div className="play-pause">
-                <div className="shape" onClick={() => this.onPlayStopClicked()}>
-                  {icon}
+              <div className="row">
+                <div className="col-sm-6 col-xs-11 vcenter">
+                  <div className="song-artwork vcenter">
+                    <img style={{display: "inline-block", height: "100%"}} src={this.state.trackArtwork}></img>
+                    <div className="play-pause" onClick={() => this.onPlayStopClicked()}>
+                        {icon}
+                    </div>
+                  </div>
+                  <div className="song-details vcenter">
+                    <p style={{margin: 0, fontWeight: "bold", fontSize: "15px"}}>{this.state.trackTitle.split(/-(.+)/)[1]}</p>
+                    <p style={{margin: 0}}>{this.state.trackTitle.split(/-(.+)/)[0]}</p>
+                  </div>
+                </div>
+                <div className="col-sm-2 col-xs-1 vcenter" style={{paddingRight: 0}}>
+                  <div className="social-wrapper" style={{float: "right"}}>
+                    <div className="player-social hidden-xs hidden-sm hidden-md">
+                      <a href={"https://open.spotify.com/search/" + encodeURIComponent(this.state.trackTitle.split(/-(.+)/)[0] + this.state.trackTitle.split(/-(.+)/)[1])} target="_blank" rel="noopener noreferrer"><i className="fa fa-spotify"></i></a>
+                      <a href={"https://twitter.com/intent/tweet?text=" + encodeURIComponent(this.state.trackTitle + " now playing on WMHD Radio. Listen in at") + "&url=https://wmhdradio.org&hashtags=NowPlaying,WMHDRadio"} target="_blank" rel="noopener noreferrer"><i className="fa fa-twitter"></i></a>
+                      <a href="https://www.facebook.com/sharer/sharer.php?u=https://wmhdradio.org" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook"></i></a>
+                    </div>
+                    <div className="song-history">
+                      <div className={this.state.historyClass}>
+                        <i title="Song History" onClick={() => this.toggleHistory()} className="fa fa-list-ul"></i>
+                        <ul className="dropdown-menu list-group history-list" aria-labelledby="dropdownMenu2">
+                          <li class="dropdown-header">Recently Played</li>
+                          {this.state.history && this.state.history.map((item, index) => (
+                            <div key={index}>
+                              <li>{item.title}</li>
+                              {(index != this.state.history.length-1) && <li role="separator" class="divider"></li>}
+                            </div>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-4 col-xs-12 vcenter">
+                  <div className="volume-slider">
+                    <div className="row">
+                      <div className="col-xs-1" style={{paddingLeft: 0, paddingRight: 0, textAlign: "right"}}>
+                        <i className="fa fa-volume-down"></i>
+                      </div>
+                      <div className="col-xs-10">
+                        <Slider 
+                          trackStyle={{ backgroundColor: '#800000', height: 8 }}
+                          handleStyle={{
+                            boxShadow: "0 0 0 0",
+                            borderColor: "#580100",
+                            backgroundColor: '#800000',
+                            height: 18,
+                            width: 18
+                          }}
+                          railStyle={{ backgroundColor: '#E9E9E9', height: 8 }}
+                          onChange={(value) => this.updateVolume(value)}
+                          value={this.state.volume*100}
+                        />
+                      </div>
+                      <div className="col-xs-1" style={{paddingLeft: 0}}>
+                        <i className="fa fa-volume-up"></i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="song-details">
-                {this.state.artistName} - {this.state.trackTitle} 
-              </div>
-              <div className="volume-slider hidden-xs">
-                <i className="fa fa-volume-down"></i>
-                <i className="fa fa-volume-up"></i>
-                <Slider 
-                  trackStyle={{ backgroundColor: '#800000', height: 8 }}
-                  handleStyle={{
-                    boxShadow: "0 0 0 0",
-                    borderColor: "#580100",
-                    backgroundColor: '#800000',
-                    height: 18,
-                    width: 18
-                  }}
-                  railStyle={{ backgroundColor: '#E9E9E9', height: 8 }}
-                  onChange={(value) => this.updateVolume(value)}
-                  value={this.state.volume*100}
-                />
-              </div>
             </div>
-          </div>{ /* /.jp-gui */ }
-        </div>{ /* /.audio-player */ }
-        <div className={this.state.activeClassPadder} style={{height: 80}}></div>
+          </div>
+        </div>
+        { /* /.audio-player */ }
+        <div className={this.state.activeClassPadder} style={{height: 100}}></div>
         <div ref="footer">
 
         </div>

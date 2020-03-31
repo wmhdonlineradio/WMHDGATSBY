@@ -8,11 +8,12 @@ const AboutPage = ({data}) => (
   <>
     <SEO title="About" />
     <section className="container content" style={{marginBottom: 20}}>
-      <h2>About Us</h2>
+      <h2>About WMHD Radio</h2>
       <Img fluid={data.clubImage.childImageSharp.fluid} className="clubimage" />
       <p>WMHD Radio is a student run radio that offers online music, equipment rentals & DJ services for Rose-Hulman Institute of Technology community. Our studio is located in the basement of BSB hall, room 032.</p>
 
       <h3>Club Meetings</h3>
+      <div class="alert alert-danger" role="alert"><b>Notice:</b> Due to the COVID-19 pandemic, all WMHD Radio events and open hours are canceled for the rest of academic year. The studio will be closed for this time period as well.</div>
       <p>WMHD Online Radio has general club meetings every Wednesday at 8 PM in the basement of BSB, room 032.
       In these meetings we discuss/listen to music, plan events, stream live radio shows, 
       and also run workshops on things like DJing, equipment setup, and the recording process.</p>
@@ -21,9 +22,10 @@ const AboutPage = ({data}) => (
       <div><b>General Manager</b>: Katana Colledge</div>
       <div><b>Equipment Manager</b>: Keith Condray-Raderstorf</div>
       <div><b>Personnel Director</b>: Laya Mehra</div>
-      <div><b>Communications Director</b>: Athena Henderson</div>
-      <div><b>Webmaster</b>: William Mason</div>
-      <div><b>Treasurer</b>: Loki Strain</div>
+      <div><b>Program Director</b>: Sabri Amer</div>
+      <div><b>Communications Director</b>: Logan Ramon</div>
+      <div><b>Webmaster</b>: Athena Henderson</div>
+      <div><b>Treasurer</b>: Andrew Orians</div>
       <div><b>Faculty Advisor</b>: Kevin Lanke</div>
       
       <h3>Room Info</h3>
@@ -33,6 +35,7 @@ const AboutPage = ({data}) => (
       The hours that the radio is open weekly are posted below.</p>
       
       <h3>Open Radio Room Hours and Weekly Events</h3>
+      <div class="alert alert-danger" role="alert"><b>Notice:</b> Due to the COVID-19 pandemic, all WMHD Radio events and open hours are canceled for the rest of academic year. The studio will be closed for this time period as well.</div>
       <div><b>Monday:</b></div>
       <div>4:00 PM - 5:00 PM (Keith)</div>
       <div><b>Tuesday:</b></div>
