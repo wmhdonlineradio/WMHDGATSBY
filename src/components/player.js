@@ -83,7 +83,7 @@ class Player extends React.Component {
             }
           });
         var timeout = 20000;
-        setTimeout(this.fetchData(), timeout);
+        setTimeout(() => this.fetchData(), timeout);
       });
   }
 
