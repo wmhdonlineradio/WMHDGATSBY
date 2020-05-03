@@ -36,7 +36,7 @@ let Footer = () => {
 
                 <div className="col-md-4 col-sm-4 footer-row">
                     <div className="title"><h4>View the chat</h4></div>
-                    <a href="https://discord.gg/g8kFRej" type="button" className="btn btn-discord">Join Our Discord</a>
+                    <a href="https://discord.gg/nAr4xqc" type="button" className="btn btn-discord">Join Our Discord</a>
                 </div>{ /* /.footer-row */ }
             </div>{ /* /.container */ }
         
