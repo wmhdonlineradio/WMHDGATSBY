@@ -42,7 +42,7 @@ class Nav extends React.Component {
                 <li className="hidden-xs">
                   <Link to="/" className="brand"><img src={Logo} alt="WMHD Logo" /></Link>
                 </li>
-                <li><Link to="/archive">Archive</Link></li>
+                <li><a href="https://www.mixcloud.com/wmhdonlineradio/">Archive</a></li>
                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeggZD4Busmn-YDP0NbEWqNMB_leOIePlblqkMUsb9WULST9g/viewform">Rental/DJ Requests</a></li>
               </ul>{ /* /.nav */ }
             </div>{ /*/.nav-collapse */ }
