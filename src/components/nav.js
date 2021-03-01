@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import Logo from "../images/logo.png"
+import Logo from "../images/wmhd-logo.png"
 
 class Nav extends React.Component {
   state = {}
@@ -35,7 +35,7 @@ class Nav extends React.Component {
             <div id="navbar">
               <ul className="nav navbar-nav">
                 <li className="visible-xs-block">
-                  <Link to="/" className="brand"><img src={Logo} height="70px" alt="WMHD Logo" /></Link>
+                  <Link to="/" className="brand"><img src={Logo} style={{width: 70}} alt="WMHD Logo" /></Link>
                 </li>
                 <span className="navbar-section">
                   <li><Link to="/about">About</Link></li>

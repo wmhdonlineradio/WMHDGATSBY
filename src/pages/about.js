@@ -13,7 +13,7 @@ const AboutPage = ({data}) => (
       <p>WMHD Radio is a student run radio that offers online music, equipment rentals & DJ services for Rose-Hulman Institute of Technology community. Our studio is located in the basement of BSB hall, room 032.</p>
 
       <h3>Club Meetings</h3>
-      <div class="alert alert-danger" role="alert"><b>Notice:</b> Due to the COVID-19 pandemic, all WMHD Radio open hours are canceled until further notice. The studio will be closed for this time period as well. Events will be held on a limited basis and all meetings will be virtual.</div>
+      <div className="alert alert-danger" role="alert"><b>Notice:</b> Due to the COVID-19 pandemic, all WMHD Radio open hours are canceled until further notice. The studio will be closed for this time period as well. Events will be held on a limited basis and all meetings will be virtual.</div>
       <p>WMHD Online Radio has general club meetings every Thursday at 7 PM in the basement of BSB, room 032.
       In these meetings we discuss/listen to music, plan events, stream live radio shows, 
       and also run workshops on things like DJing, equipment setup, and the recording process.</p>
@@ -35,7 +35,7 @@ const AboutPage = ({data}) => (
       The hours that the radio is open weekly are posted below.</p>
       
       <h3>Open Radio Room Hours and Weekly Events</h3>
-      <div class="alert alert-danger" role="alert"><b>Notice:</b> Due to the COVID-19 pandemic, all WMHD Radio open hours are canceled until further notice. The studio will be closed for this time period as well. Events will be held on a limited basis and all meetings will be virtual.</div>
+      <div className="alert alert-danger" role="alert"><b>Notice:</b> Due to the COVID-19 pandemic, all WMHD Radio open hours are canceled until further notice. The studio will be closed for this time period as well. Events will be held on a limited basis and all meetings will be virtual.</div>
       <div><b>Thursday:</b></div>
       <div>Officer Mettings at 6:00 PM</div> 
       <div>Club Meetings at 7:00 PM</div>
