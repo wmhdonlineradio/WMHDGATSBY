@@ -62,14 +62,22 @@ const IndexPage = () => (
     </section>*/}
     { /* Schedule End */ }
 
+    { /* New Schedule Begin */ }
+    <section className="schedule" id="schedule">
+      <div className="container content">
+        <iframe src="https://embed.radio.co/embeds/schedule/es0c564d0.html" style={{border: "none", overflow: "hidden", width: "100%"}} width="auto" height="600px" scrolling="no" />
+      </div>
+    </section>
+    { /* New Schedule End */ }
+
     { /* calendarbegin */ }
-    <section className="calendar" id="calendar">
+    { /* <section className="calendar" id="calendar">
           <div className="overlay"></div>
           <div className="container content">
             <div className="col-md-12 title wow animated fadeIn" data-wow-delay="0.5s"><h2>Calendar</h2></div>
             <iframe src="https://calendar.google.com/calendar/embed?src=wmhdradio%40gmail.com&amp;ctz=America/New_York&amp;mode=AGENDA&amp;color=%23D50000" title="calendar" style={{border: 0}} width="100%" height="600" frameBorder="0" scrolling="no"></iframe>
-          </div> { /*/.container*/ }
-    </section>{ /*/.calendar*/ }
+          </div> 
+    </section> */}
     { /* calendar end */ }
   </>
 )

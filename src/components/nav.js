@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import Logo from "../images/logo.png"
+import Logo from "../images/wmhd-logo-cropped.png"
 
 class Nav extends React.Component {
   state = {}
@@ -35,15 +35,21 @@ class Nav extends React.Component {
             <div id="navbar">
               <ul className="nav navbar-nav">
                 <li className="visible-xs-block">
-                  <Link to="/" className="brand"><img src={Logo} height="70px" alt="WMHD Logo" /></Link>
+                  <Link to="/" className="brand"><img src={Logo} style={{width: 70}} alt="WMHD Logo" /></Link>
                 </li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/services">Services</Link></li>
+                <span className="navbar-section">
+                  <li><Link to="/about">About</Link></li>
+                  <li><Link to="/services">Services</Link></li>
+                  {/*<li><Link to="/store">Store</Link></li>*/}
+                  <li><a href="https://commerce.cashnet.com/rosehulmanem?CNAME=STUDENT%20ACTV">Store</a></li>
+                </span>
                 <li className="hidden-xs">
                   <Link to="/" className="brand"><img src={Logo} alt="WMHD Logo" /></Link>
                 </li>
-                <li><a href="https://www.mixcloud.com/wmhdonlineradio/">Archive</a></li>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeggZD4Busmn-YDP0NbEWqNMB_leOIePlblqkMUsb9WULST9g/viewform">Rental/DJ Requests</a></li>
+                <span className="navbar-section">
+                  <li><a href="https://www.mixcloud.com/wmhdonlineradio/">Archive</a></li>
+                  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeggZD4Busmn-YDP0NbEWqNMB_leOIePlblqkMUsb9WULST9g/viewform">Rental/DJ Requests</a></li>
+                </span>
               </ul>{ /* /.nav */ }
             </div>{ /*/.nav-collapse */ }
           </div>{ /*/.container */ }

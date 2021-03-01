@@ -159,11 +159,11 @@ class Player extends React.Component {
                       <div className={this.state.historyClass}>
                         <i title="Song History" onClick={() => this.toggleHistory()} className="fa fa-list-ul"></i>
                         <ul className="dropdown-menu list-group history-list" aria-labelledby="dropdownMenu2">
-                          <li class="dropdown-header">Recently Played</li>
+                          <li className="dropdown-header">Recently Played</li>
                           {this.state.history && this.state.history.map((item, index) => (
                             <div key={index}>
                               <li>{item.title}</li>
-                              {(index != this.state.history.length-1) && <li role="separator" class="divider"></li>}
+                              {(index != this.state.history.length-1) && <li role="separator" className="divider"></li>}
                             </div>
                           ))}
                         </ul>
