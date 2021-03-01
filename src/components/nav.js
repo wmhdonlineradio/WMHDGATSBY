@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import Logo from "../images/wmhd-logo.png"
+import Logo from "../images/wmhd-logo-cropped.png"
 
 class Nav extends React.Component {
   state = {}
