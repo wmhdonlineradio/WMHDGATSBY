@@ -37,13 +37,19 @@ class Nav extends React.Component {
                 <li className="visible-xs-block">
                   <Link to="/" className="brand"><img src={Logo} height="70px" alt="WMHD Logo" /></Link>
                 </li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/services">Services</Link></li>
+                <span className="navbar-section">
+                  <li><Link to="/about">About</Link></li>
+                  <li><Link to="/services">Services</Link></li>
+                  {/*<li><Link to="/store">Store</Link></li>*/}
+                  <li><a href="https://commerce.cashnet.com/rosehulmanem?CNAME=STUDENT%20ACTV">Store</a></li>
+                </span>
                 <li className="hidden-xs">
                   <Link to="/" className="brand"><img src={Logo} alt="WMHD Logo" /></Link>
                 </li>
-                <li><a href="https://www.mixcloud.com/wmhdonlineradio/">Archive</a></li>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeggZD4Busmn-YDP0NbEWqNMB_leOIePlblqkMUsb9WULST9g/viewform">Rental/DJ Requests</a></li>
+                <span className="navbar-section">
+                  <li><a href="https://www.mixcloud.com/wmhdonlineradio/">Archive</a></li>
+                  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeggZD4Busmn-YDP0NbEWqNMB_leOIePlblqkMUsb9WULST9g/viewform">Rental/DJ Requests</a></li>
+                </span>
               </ul>{ /* /.nav */ }
             </div>{ /*/.nav-collapse */ }
           </div>{ /*/.container */ }

@@ -161,7 +161,6 @@
     color: #ddd;
     text-transform: uppercase;
     font-family: "Oswald", helvetica, sans-serif;
-    padding: 30px 20px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -208,6 +207,12 @@
   .navbar .navbar-nav .dropdown .dropdown-menu li a:hover {
     background: #222222;
     color: #ffffff;
+  }
+  .navbar-section {
+    width: 25%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0px 40px;
   }
   /* banner title */
   .banner {
@@ -743,7 +748,7 @@
   .schedule .content {
     position: relative;
     z-index: 3;
-    padding: 80px 0px;
+    padding: 20px 0px;
   }
   .schedule .content .title {
     padding-bottom: 40px;
@@ -1678,6 +1683,13 @@
   display: inline-block;
 }
 
+.song-details p {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .song-artwork {
   display: inline-block;
   height: 100px;
@@ -1693,8 +1705,17 @@
 /* Phone Specific Code */
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .navbar .navbar-nav li a {
+  .navbar .navbar-nav li {
     padding: 10px 10px 30px;
+  }
+
+  .navbar .navbar-nav li.visible-xs-block {
+    padding: 0;
+  }
+
+  .navbar-section {
+    display: inline;
+    padding: 0px;
   }
 
   .interface .container {
