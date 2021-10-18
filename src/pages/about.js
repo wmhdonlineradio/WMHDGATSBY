@@ -13,8 +13,7 @@ const AboutPage = ({data}) => (
       <p>WMHD Radio is a student run radio that offers online music, equipment rentals &amp; DJ services for Rose-Hulman Institute of Technology community. Our studio is located in the basement of BSB hall, room 032.</p>
 
       <h3>Club Meetings</h3>
-      <div className="alert alert-danger" role="alert"><b>Notice:</b> Due to the COVID-19 pandemic, all WMHD Radio open hours are canceled until further notice. The studio will be closed for this time period as well. Events will be held on a limited basis and all meetings will be virtual.</div>
-      <p>WMHD Online Radio has general club meetings every Thursday at 7 PM in the basement of BSB, room 032.
+      <p>WMHD Online Radio has general club meetings every Wednesday at 7 PM in the basement of BSB, room 032.
       In these meetings we discuss/listen to music, plan events, stream live radio shows, 
       and also run workshops on things like DJing, equipment setup, and the recording process.</p>
 
@@ -29,19 +28,22 @@ const AboutPage = ({data}) => (
       <div><b>Faculty Advisor</b>: Kevin Lanke</div>
       
       <h3>Room Info</h3>
-      <p>We have three main rooms in BSB basement: the Broadcasting Room (BSB032), Recording Studio (BSB030), and Podcasting Studio (BSB028).
+      <p>We have four main rooms in BSB basement: the Broadcasting Room (BSB032), Recording Studio (BSB030), Podcasting Studio (BSB028), and Music Lounge.
       We also have a storage room for our hundreds of CDs and records and equipment. We have one of the largest spaces on campus for a club and we strive to make them available to campus.
       Come hang out in them! Every Rose-Hulman student is welcome to use the rooms. See <Link to="/services">Services</Link> for information about using the recording studio and the podcasting studio.
       The hours that the radio is open weekly are posted below.</p>
       
       <h3>Open Radio Room Hours and Weekly Events</h3>
-      <div className="alert alert-danger" role="alert"><b>Notice:</b> Due to the COVID-19 pandemic, all WMHD Radio open hours are canceled until further notice. The studio will be closed for this time period as well. Events will be held on a limited basis and all meetings will be virtual.</div>
-      <div><b>Monday:</b></div>
-      <div>Officer Mettings at 5:00 PM</div> 
-      <div><b>Tuesday:</b></div>
+      <div><b>Monday:</b> 2:00 PM - 5:00 PM (Logan)</div>
+      <div>Officer Mettings at 8:00 PM</div> 
+      <div><b>Tuesday:</b> 2:00 PM - 5:00 PM (Donald)</div>
+      <div><b>Wednesday:</b> 12:00 PM - 2:00 PM (Laya), 2:00 PM - 4:00 PM (Theo)</div>
       <div>Club Meetings at 7:00 PM</div>
-      <div><b>Friday:</b></div>
-      <div>Jam Session from 6:45 PM to 9:45 PM (Tentative)</div>
+      <div><b>Thursday:</b> 8:00 PM - 10:00 PM (Natalija)</div>
+      <div><b>Friday:</b> 1:30 PM - 4:00 PM (Andrew)</div>
+      <div>Jam Session from 7:00 PM to 9:00 PM</div>
+      <div><b>Saturday:</b> Jam Session from 7:00 PM to 10:00 PM</div>
+      <div><b>Sunday:</b> 2:00 PM - 4:00 PM (Keith)</div>
     </section>
   </>
 )
