@@ -18,12 +18,12 @@ const AboutPage = ({data}) => (
       and also run workshops on things like DJing, equipment setup, and the recording process.</p>
 
       <h3>Current Officers</h3>
-      <div><b>General Manager/President</b>: Keith Condray-Raderstorf</div>
-      <div><b>Equipment Manager</b>: Theo Mitz</div>
-      <div><b>Personnel Director</b>: Laya Mehra</div>
-      <div><b>Program Director</b>: Logan Ramon</div>
+      <div><b>General Manager/President</b>: Logan Ramon</div>
+      <div><b>Equipment Manager</b>: Donald Hau</div>
+      <div><b>Personnel Director</b>: Athena Henderson</div>
+      <div><b>Program Director</b>: Audrey Mitchell</div>
       <div><b>Communications Director</b>: Natalija Pumpurs</div>
-      <div><b>Webmaster</b>: Andrew Orians</div>
+      <div><b>Webmaster</b>: Abby Smith</div>
       <div><b>Treasurer</b>: Donald Hau</div>
       <div><b>Faculty Advisor</b>: Kevin Lanke</div>
       
