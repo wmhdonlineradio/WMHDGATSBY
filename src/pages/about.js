@@ -24,7 +24,7 @@ const AboutPage = ({data}) => (
       <div><b>Program Director</b>: Audrey Mitchell</div>
       <div><b>Communications Director</b>: Natalija Pumpurs</div>
       <div><b>Webmaster</b>: Abby Smith</div>
-      <div><b>Treasurer</b>: Donald Hau</div>
+      <div><b>Treasurer</b>: Andrew Orians</div>
       <div><b>Faculty Advisor</b>: Kevin Lanke</div>
       
       <h3>Room Info</h3>
