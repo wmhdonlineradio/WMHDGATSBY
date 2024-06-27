@@ -47,7 +47,8 @@ const AboutPage = ({data}) => (
       <a href="https://wmhdradio.org/discord" type="button" className="btn btn-discord">Join Our Discord</a>
 
       <h3>Club Meetings</h3>
-      <p>WMHD Online Radio has general club meetings every Wednesday at 8 PM in the basement of BSB, room 032.
+      <p>WMHD Online Radio has general club meetings in the basement of BSB, room 032.
+        The time for next quarter is still tentative.
       In these meetings we discuss/listen to music, plan events, stream live radio shows, 
       and also run workshops on things like DJing, equipment setup, and the recording process. </p>
 
@@ -88,14 +89,15 @@ const AboutPage = ({data}) => (
       })}
 
       <h3>Current Officers</h3>
-      <div><b>General Manager/President</b>: Logan Ramon</div>
-      <div><b>Equipment Manager</b>: Donald Hau</div>
-      <div><b>Personnel Director</b>: Athena Henderson</div>
-      <div><b>Program Director</b>: Audrey Mitchell</div>
-      <div><b>Communications Director</b>: Natalija Pumpurs</div>
-      <div><b>Webmaster</b>: Abby Smith</div>
-      <div><b>Treasurer</b>: Andrew Orians</div>
-      <div><b>Faculty Advisor</b>: Kevin Lanke</div>
+      <div><b>General Manager/President</b>: Zico Youash </div>
+      <div><b>Equipment Manager</b>: Henry Morin </div>
+      <div><b>Personnel Director</b>: Charlie L.</div>
+      <div><b>Program Director</b>: Peter F </div>
+      <div><b>Communications Director</b>: Paul Sampson</div>
+      <div><b>Webmaster</b>: James Harris  </div>
+      <div><b>Treasurer</b>: Ben Wilson</div>
+      <div><b>Podcast Director</b>: Randyn</div>
+      <div><b>Faculty Advisor</b>: Landon</div>
       
       <h3>Room Info</h3>
       <p>We have four main rooms in BSB basement: the Broadcasting Room (BSB032), Recording Studio (BSB030), Podcasting Studio (BSB028), and Music Lounge (BSB022).
@@ -103,13 +105,15 @@ const AboutPage = ({data}) => (
       Come hang out in them! Every Rose-Hulman student is welcome to use the rooms. See <Link to="/services">Services</Link> for information about using the recording studio and the podcasting studio.
       The hours that the radio is open weekly are posted below.</p>
       
+      <h3>Open Radio Room Hours and Weekly Events</h3>
+      <div><b>Open Hours:</b> Open hours are posted in our discord and outside our door, if you ever need to get into the space ping or message an officer and we'll see if we can let you in <br /> &emsp; </div>
     </section>
   </>
 )
 
 export const query = graphql`
   query {
-    clubImage: file(relativePath: { eq: "club-photo.jpg" }) {
+    clubImage: file(relativePath: { eq: "club-photo2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 4028) {
           ...GatsbyImageSharpFluid
