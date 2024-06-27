@@ -24,7 +24,7 @@ const AboutPage = ({data}) => (
       <div><b>Personnel Director</b>: Charlie L.</div>
       <div><b>Program Director</b>: Peter F </div>
       <div><b>Communications Director</b>: Paul Sampson</div>
-      <div><b>Webmaster</b>: James Harris WORK PLEASE</div>
+      <div><b>Webmaster</b>: James Harris WORK </div>
       <div><b>Treasurer</b>: Ben Wilson</div>
       <div><b>Podcast Director</b>: Randyn</div>
       <div><b>Faculty Advisor</b>: Landon</div>
