@@ -62,13 +62,7 @@ const IndexPage = () => (
     </section>*/}
     { /* Schedule End */ }
 
-    { /* New Schedule Begin */ }
-    <section className="schedule" id="schedule">
-      <div className="container content">
-        <iframe src="https://embed.radio.co/embeds/schedule/es0c564d0.html" style={{border: "none", overflow: "hidden", width: "100%"}} width="auto" height="600px" scrolling="no" />
-      </div>
-    </section>
-    { /* New Schedule End */ }
+
 
     { /* calendarbegin */ }
     { /* <section className="calendar" id="calendar">
