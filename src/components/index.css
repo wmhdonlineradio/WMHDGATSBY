@@ -82,7 +82,7 @@ nav {
   padding: 15px 20px;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: white;
   transition: all 0.3s ease;
@@ -99,10 +99,12 @@ nav {
 .navbar-section {
   display: flex;
   align-items: center;
+  gap: 30px; /* Ensure there is space between items */
 }
 
 .navbar-section li {
-  margin: 0 10px;
+  list-style: none;
+  margin: 0;
 }
 
 .navbar-section a {
@@ -117,26 +119,21 @@ nav {
   color: #ffcc00; /* Hover effect */
 }
 
-/* Mobile logo adjustment */
-.visible-xs-block {
-  display: block;
+/* Logo adjustment */
+.navbar-logo img {
+  width: 100px;
+  height: auto;
 }
 
-/* Hide desktop logo on mobile */
-.hidden-xs {
-  display: none;
-}
-
-/* Adjust navbar links on mobile */
+/* Mobile adjustments */
 @media (max-width: 768px) {
   nav {
-    flex-direction: row;  /* Keep navbar elements in line */
-    align-items: center;  /* Center them horizontally */
+    flex-direction: column;
   }
 
   .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
   }
 
@@ -210,3 +207,146 @@ nav {
 }
 
 /* Animation or other style adjustments can be added here */
+
+/* Global styles for About page */
+.about-page {
+  color: #ffffff;
+  background-color: #222; /* Dark background for contrast */
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.about-page h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.about-page h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.about-page .about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.about-page .club-image {
+  display: block;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-page .officers-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.about-page .officers-list li {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+.about-page .officers-list li strong {
+  font-weight: bold;
+  color: #007acc;
+}
+
+/* Link Styling */
+.about-page a {
+  color: #f4a261;
+  text-decoration: none;
+}
+
+.about-page a:hover {
+  text-decoration: underline;
+  color: #f4a261;
+}
+
+
+/* Scoped styles for Services page */
+.services-page {
+  color: #ffffff;
+  background-color: #222; /* Dark background for contrast */
+  padding: 30px 15px;
+  border-radius: 10px;
+}
+
+.services-page h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px; /* Reduced bottom margin */
+  color: #ffffff;
+}
+
+.services-page h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 10px; /* Reduced space between title and content */
+  margin-bottom: 8px; /* Reduced space between title and content */
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.services-page .services-info {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #ddd;
+  margin-bottom: 10px; /* Reduced bottom margin */
+}
+
+.services-page .services-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px; /* Smaller gap between columns */
+}
+
+.services-page .services-col {
+  width: 48%; /* Keeps two columns per row */
+  margin-bottom: 10px; /* Smaller bottom margin between columns */
+}
+
+.services-page .services-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 00%; /* Further reduced padding */
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Smaller margin between image and text */
+}
+
+.services-page .services-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services-page a {
+  color: #f4a261;
+  text-decoration: none;
+}
+
+.services-page a:hover {
+  text-decoration: underline;
+  color: #f4a261;
+}

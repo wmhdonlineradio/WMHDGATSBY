@@ -1,21 +1,19 @@
-import React, { useEffect } from "react"
+// In your index.js or main page component file
+import React, { useEffect } from "react";
 import scrollTo from 'gatsby-plugin-smoothscroll';
-
-import SEO from "../components/seo"
-import Nav from "../components/nav"
-
-import Banner from "../images/banner.jpg"  
-import WMHDLogo from "../images/wmhd-logo.png"  // Ensure you have the logo image in the correct path
-import "../components/index.css"
+import SEO from "../components/seo";
+import Nav from "../components/nav";
+import Banner from "../images/banner.jpg";
+import WMHDLogo from "../images/wmhd-logo.png";  // Ensure you have the logo image in the correct path
+import "../components/index.css";
 
 const IndexPage = () => {
   useEffect(() => {
-    // Removed dynamic resizing of banner height because CSS will handle it
-    // This should now be responsive with the background-size cover and height 100vh in CSS
+    // Any side effects or adjustments
   }, []);
 
   return (
-    <>
+    <div className="main-page">  {/* Add this wrapper div */}
       <SEO title="Home" />
       
       {/* First Banner (Hero Section) */}
@@ -54,7 +52,7 @@ const IndexPage = () => {
       </section>
 
       <Nav home={true} />
-    </>
+    </div>
   );
 }
 

@@ -1809,3 +1809,51 @@ a:hover {
   background-color:rgb(90, 110, 180);
   border-color:rgb(82, 102, 172);
 }
+
+/* styles.css */
+.about-page {
+  color: white;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.officers-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.officers-list li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.club-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
