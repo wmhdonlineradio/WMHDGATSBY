@@ -1,9 +1,212 @@
-#___gatsby {
-    width: 100%;
-    height: 100%;
+/* Remove default margin/padding from body and html */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;  /* Ensure full page height */
+  background-color: #000;  /* Set body background to black */
+  font-family: 'Arial', sans-serif;
 }
 
-#gatsby-focus-wrapper {
-    width: 100%;
-    height: 100%;
+/* Scroll info arrow */
+.scroll-info {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
+.scroll-info a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Bottom Banner */
+.bottom-banner {
+  background-color: #222;  /* Dark background */
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wmhd-logo {
+  max-width: 200px;  /* Adjust logo size */
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;  /* Hover effect */
+}
+
+/* Ensure no additional space at the bottom */
+* {
+  box-sizing: border-box;  /* Prevent unexpected margin/padding */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: row;  /* Keep it horizontal on mobile as well */
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+/* Base styles for the navbar */
+nav {
+  position: relative;
+  z-index: 10; /* Ensure navbar stays on top */
+  width: 100%;
+  background-color: #222;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Flexbox adjustments for the navbar */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-section li {
+  margin: 0 10px;
+}
+
+.navbar-section a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-section a:hover {
+  color: #ffcc00; /* Hover effect */
+}
+
+/* Mobile logo adjustment */
+.visible-xs-block {
+  display: block;
+}
+
+/* Hide desktop logo on mobile */
+.hidden-xs {
+  display: none;
+}
+
+/* Adjust navbar links on mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;  /* Keep navbar elements in line */
+    align-items: center;  /* Center them horizontally */
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar-section {
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .navbar-section li {
+    margin: 0 10px;
+  }
+
+  .hidden-xs {
+    display: block;
+  }
+
+  .visible-xs-block {
+    display: none;
+  }
+}
+
+/* Ensure fixed navbar doesn't overlap content */
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+/* Padding for navbar when it is fixed */
+.hidden {
+  display: none;
+}
+
+/* Banner styles to ensure full viewport height and proper image handling */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;  /* Full viewport height */
+  background-size: cover;  /* Ensure the background image covers the area */
+  background-position: center center;  /* Center the background image */
+  background-repeat: no-repeat;  /* Don't repeat the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url('../images/banner.jpg');  /* Set the background image here */
+}
+
+.banner .content-wrap {
+  text-align: center;
+  color: white;
+}
+
+.banner .content-wrap h1,
+.banner .content-wrap h2 {
+  font-size: 3rem;  /* Increase text size */
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.banner .content-wrap h1 {
+  font-size: 4rem;  /* Make main title larger */
+}
+
+.banner .content-wrap h2 {
+  font-size: 2rem;  /* Slightly smaller subtitle */
+}
+
+/* Animation or other style adjustments can be added here */
