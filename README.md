@@ -30,3 +30,12 @@ From here, simply navigate to the webpage it tells you and edit the code with an
 
 ## Deploying changes
 To deploy directly to production, simply push to the master branch. Alternatively, create a new branch and then create a pull request to have a live preview automatically generated.
+```bash
+git init
+git remote add origin https://github.com/wmhdonlineradio/WMHDGATSBY
+git add .
+git commit -m "Comment"
+git push -u origin master
+```
+
+
