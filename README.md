@@ -3,8 +3,6 @@
 A brief description of your project.
 
 
-```html
-<!-- This is the first code box -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +17,6 @@ A brief description of your project.
 </body>
 </html>
 
-```html
-<!-- This is the first code box -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,6 +28,6 @@ A brief description of your project.
     <h1>git init</h1>
     <h1>git add .</h1>
     <h1>git commit -m "commit message"</h1>
-    <h1>git push -u origin aster --force</h1>
+    <h1>git push -u origin master --force</h1>
 </body>
 </html>
