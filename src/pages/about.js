@@ -21,13 +21,13 @@ const AboutPage = ({data}) => (
       <h3>Current Officers</h3>
       <div><b>General Manager/President</b>: Henry Morin</div>
       <div><b>Equipment Manager</b>: Peter F</div>
-      <div><b>Personnel Director</b>: Charlie L.</div>
-      <div><b>Program Director</b>: Peter F </div>
-      <div><b>Communications Director</b>: Paul Sampson</div>
+      <div><b>Personnel Director</b>:</div>
+      <div><b>Program Director</b>:</div>
+      <div><b>Communications Director</b>:</div>
       <div><b>Webmaster</b>: James Harris </div>
-      <div><b>Treasurer</b>: Ben Wilson</div>
-      <div><b>Podcast Director</b>: Randyn</div>
-      <div><b>Faculty Advisor</b>: Landon</div>
+      <div><b>Treasurer</b>:</div>
+      <div><b>Podcast Director</b>:</div>
+      <div><b>Faculty Advisor</b>:</div>
       
       <h3>Room Info</h3>
       <p>We have four main rooms in BSB basement: the Broadcasting Room (BSB032), Recording Studio (BSB030), Podcasting Studio (BSB028), and Music Lounge (BSB022).
