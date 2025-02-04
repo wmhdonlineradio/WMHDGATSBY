@@ -19,8 +19,8 @@ const AboutPage = ({data}) => (
       and also run workshops on things like DJing, equipment setup, and the recording process.</p>
 
       <h3>Current Officers</h3>
-      <div><b>General Manager/President</b>: Zico Youash</div>
-      <div><b>Equipment Manager</b>: Henry Morin </div>
+      <div><b>General Manager/President</b>: Henry Morin</div>
+      <div><b>Equipment Manager</b>: No one!</div>
       <div><b>Personnel Director</b>: Charlie L.</div>
       <div><b>Program Director</b>: Peter F </div>
       <div><b>Communications Director</b>: Paul Sampson</div>
