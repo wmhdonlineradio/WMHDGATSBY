@@ -27,7 +27,7 @@ const AboutPage = ({data}) => (
       <div><b>Webmaster</b>: James Harris </div>
       <div><b>Treasurer</b>:</div>
       <div><b>Podcast Director</b>:</div>
-      <div><b>Faculty Advisor</b>:Landon Bundy</div>
+      <div><b>Faculty Advisor</b>:Landon Bundy | James Vinson</div>
       
       <h3>Room Info</h3>
       <p>We have four main rooms in BSB basement: the Broadcasting Room (BSB032), Recording Studio (BSB030), Podcasting Studio (BSB028), and Music Lounge (BSB022).
