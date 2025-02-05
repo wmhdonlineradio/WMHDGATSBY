@@ -20,12 +20,12 @@ const AboutPage = ({data}) => (
 
       <h3>Current Officers</h3>
       <div><b>General Manager/President</b>: Henry Morin</div>
-      <div><b>Equipment Manager</b>: Peter F</div>
-      <div><b>Personnel Director</b>:</div>
+      <div><b>Equipment Manager</b>: Zander</div>
+      <div><b>Personnel Director</b>: Peter F</div>
       <div><b>Program Director</b>:</div>
       <div><b>Communications Director</b>:</div>
       <div><b>Webmaster</b>: James Harris </div>
-      <div><b>Treasurer</b>:</div>
+      <div><b>Treasurer</b>: Paul</div>
       <div><b>Podcast Director</b>:</div>
       <div><b>Faculty Advisor</b>:Landon Bundy | James Vinson</div>
       
