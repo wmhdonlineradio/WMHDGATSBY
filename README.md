@@ -3,8 +3,8 @@
 # Editing website
 ```
 git clone https://github.com/wmhdonlineradio/WMHDGATSBY
-cd wmhd-radio-website
-yard install
+cd WMHDGATSBY
+yarn install
 gatsby develop
 ```
 
